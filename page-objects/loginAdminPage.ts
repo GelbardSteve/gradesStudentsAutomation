@@ -8,7 +8,6 @@ export class LoginAdminPage {
   ) {}
 
   async testAdmin() {
-    this.f.createNewReport(this.testName);
 
     await this.f.openBrowser({
       browser: this.browser,

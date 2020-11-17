@@ -20,7 +20,6 @@ class ValidationAdminPage {
     }
     testAdmin() {
         return __awaiter(this, void 0, void 0, function* () {
-            this.browserN === "chrome" ? this.f.createNewReport(this.testName) : null;
             yield this.f.openBrowser({
                 browser: this.browser,
                 data: this.data.URL,

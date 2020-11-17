@@ -1,0 +1,5 @@
+node_modules
+nightwatch_chrome
+selenium-server.log
+debug.log
+dist

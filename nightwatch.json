@@ -14,15 +14,15 @@
     "port": 4444,
     "cli_args": {
       "webdriver.chrome.driver": "./lib/drivers/chromedriver.exe",
-      "webdriver.gecko.driver": "",
-      "webdriver.edge.driver": ""
+      "webdriver.gecko.driver": "./lib/drivers/geckodriver.exe",
+      "webdriver.edge.driver": "./lib/drivers/msedgedriver.exe"
     }
   },
 
   "test_settings": {
     "default": {
       "launch_url": "http://localhost",
-      "selenium_port": 4444,
+      "port": 4444,
       "selenium_host": "localhost",
       "silent": true,
       "suppressWebdriverErrors": true,
@@ -42,14 +42,33 @@
         "javascriptEnabled": true,
         "acceptSslCerts": true,
         "chromeOptions": {
-          "w3c": false
+          "w3c": false,
+          "args": ["--no-sandbox", "headless"]
+        }
+      }
+    },
+
+    "firefox": {
+      "desiredCapabilities": {
+        "browserName": "firefox",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true,
+        "marionette": true,
+        "moz:firefoxOptions": {
+          "args": ["--no-sandbox", "--headless"]
         }
       }
     },
 
     "edge": {
       "desiredCapabilities": {
-        "browserName": "MicrosoftEdge"
+        "browserName": "MicrosoftEdge",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true,
+        "edgeOptions": {
+          "w3c": false,
+          "args": ["--no-sandbox", "--headless"]
+        }
       }
     }
   }

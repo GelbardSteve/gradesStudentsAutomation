@@ -5,5 +5,6 @@ export interface Command {
     data?: any[]
     report: (r: Report) => void,
     reportName: string;
+    browserName: string;
 }
   

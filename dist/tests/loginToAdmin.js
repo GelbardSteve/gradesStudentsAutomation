@@ -5,8 +5,8 @@ const f = require("../service/exportFunction");
 module.exports = {
     tags: ["LoginToAdminPage"],
     "Login To Admin Page": (browser) => {
-        new loginAdminPage_1.GoogleSeach(browser, f, loginAdminPage_2.selectors, "LoginToAdminPage.txt").testAdmin();
-        browser.end();
+        const browserN = browser.options.desiredCapabilities.browserName;
+        new loginAdminPage_1.LoginAdminPage(browser, f, loginAdminPage_2.selectors, "LoginToAdminPage.txt", browserN).testAdmin();
     },
 };
 //# sourceMappingURL=loginToAdmin.js.map

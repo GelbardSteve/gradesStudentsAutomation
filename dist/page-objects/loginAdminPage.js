@@ -9,43 +9,48 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.GoogleSeach = void 0;
-class GoogleSeach {
-    constructor(browser, f, data, testName) {
+exports.LoginAdminPage = void 0;
+class LoginAdminPage {
+    constructor(browser, f, data, testName, browserN) {
         this.browser = browser;
         this.f = f;
         this.data = data;
         this.testName = testName;
+        this.browserN = browserN;
     }
     testAdmin() {
         return __awaiter(this, void 0, void 0, function* () {
-            this.f.createNewReport(this.testName);
+            this.browserN === "chrome" ? this.f.createNewReport(this.testName) : null;
             yield this.f.openBrowser({
                 browser: this.browser,
-                data: this.data.GoogleURL,
+                data: this.data.URL,
                 report: this.f.insertDataToReport,
                 reportName: this.testName,
+                browserName: this.browserN,
             });
             yield this.f.insertText({
                 browser: this.browser,
                 data: this.data.UserName,
                 report: this.f.insertDataToReport,
                 reportName: this.testName,
+                browserName: this.browserN,
             });
             yield this.f.insertText({
                 browser: this.browser,
                 data: this.data.Password,
                 report: this.f.insertDataToReport,
                 reportName: this.testName,
+                browserName: this.browserN,
             });
             yield this.f.clickOnElement({
                 browser: this.browser,
                 data: this.data.SubmitBtn,
                 report: this.f.insertDataToReport,
                 reportName: this.testName,
+                browserName: this.browserN,
             });
         });
     }
 }
-exports.GoogleSeach = GoogleSeach;
+exports.LoginAdminPage = LoginAdminPage;
 //# sourceMappingURL=loginAdminPage.js.map

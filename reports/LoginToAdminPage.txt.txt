@@ -1,0 +1,6 @@
+Time: 2:37, Date: 11-17-2020
+
+SUCCEED: Open Browser Data: Google URL | http://localhost:4200/
+SUCCEED: Insert Text Data: User Name | #Name | admin
+SUCCEED: Insert Text Data: Password | #Password | admin
+SUCCEED: Click On Data: Submit Button | body > app-root > login-parent-dashboard > div > login-admin-child > div > form > button

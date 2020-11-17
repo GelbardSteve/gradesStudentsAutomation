@@ -1,0 +1,20 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf dist/ && tsc",
+    "test": "npm run build && node nightwatch -e chrome && npm run cleanup",
+    "cleanup": "taskkill /f /im chromedriver.exe"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nightwatch": "^1.5.1",
+    "ts-loader": "^8.0.11"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.7"
+  }
+}

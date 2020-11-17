@@ -1,8 +1,8 @@
-15:49:27.926 INFO [GridLauncherV3.parse] - Selenium server version: 3.141.59, revision: e82be7d358
-15:49:28.206 INFO [GridLauncherV3.lambda$buildLaunchers$3] - Launching a standalone Selenium Server on port 4444
-2020-11-17 15:49:28.308:INFO::main: Logging initialized @1167ms to org.seleniumhq.jetty9.util.log.StdErrLog
-15:49:28.874 INFO [WebDriverServlet.<init>] - Initialising WebDriverServlet
-15:49:29.081 ERROR [BaseServer.start] - Port 4444 is busy, please choose a free port and specify it using -port option
+17:51:07.318 INFO [GridLauncherV3.parse] - Selenium server version: 3.141.59, revision: e82be7d358
+17:51:07.566 INFO [GridLauncherV3.lambda$buildLaunchers$3] - Launching a standalone Selenium Server on port 4444
+2020-11-17 17:51:07.680:INFO::main: Logging initialized @1049ms to org.seleniumhq.jetty9.util.log.StdErrLog
+17:51:08.326 INFO [WebDriverServlet.<init>] - Initialising WebDriverServlet
+17:51:08.493 ERROR [BaseServer.start] - Port 4444 is busy, please choose a free port and specify it using -port option
 Exception in thread "main" java.lang.RuntimeException: java.net.BindException: Address already in use: bind
 	at org.openqa.selenium.grid.server.BaseServer.start(BaseServer.java:221)
 	at org.openqa.selenium.remote.server.SeleniumServer.boot(SeleniumServer.java:131)
@@ -26,101 +26,93 @@ Caused by: java.net.BindException: Address already in use: bind
 	at org.seleniumhq.jetty9.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
 	at org.openqa.selenium.grid.server.BaseServer.start(BaseServer.java:202)
 	... 6 more
-um.org/security-considerations for suggestions on keeping MSEdgeDriver safe.
-Starting ChromeDriver 86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}) on port 17501
+.org/security-considerations for suggestions on keeping MSEdgeDriver safe.
+MSEdgeDriver was started successfully.
+1605628272619	geckodriver	INFO	Listening on 127.0.0.1:2325
+Starting ChromeDriver 86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}) on port 33412
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-MSEdgeDriver was started successfully.
 ChromeDriver was started successfully.
-1605620973359	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--no-sandbox" "-foreground" "-no-remote" "-profile" "C:\\Users\\Steve\\AppData\\Local\\Temp\\rust_mozprofile9W9o57"
-15:49:36.798 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
-15:49:37.509 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
-15:49:37.956 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 279eed28c6f490a43ead24fb681d7246 (org.openqa.selenium.chrome.ChromeDriverService)
-15:49:37.956 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 234ca7f2f2fb0c491e56e9195cac95c3 (org.openqa.selenium.edge.EdgeDriverService)
+1605628273405	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--no-sandbox" "--headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Steve\\AppData\\Local\\Temp\\rust_mozprofilejiivZj"
+*** You are running in headless mode.
+17:51:16.858 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
+17:51:17.409 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
+17:51:17.802 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session c3e2c9b225eb2c0d992cf79674b5ad61 (org.openqa.selenium.edge.EdgeDriverService)
+17:51:17.806 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session b095191d05df3432225db637d6a6d3e8 (org.openqa.selenium.chrome.ChromeDriverService)
 JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-1605620991445	Marionette	INFO	Listening on port 58026
-15:49:51.857 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
-15:49:51.886 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 756f5306-fde9-498d-a657-98097635756a (org.openqa.selenium.firefox.GeckoDriverService)
-15:49:57.960 INFO [ActiveSessions$1.onStop] - Removing session 279eed28c6f490a43ead24fb681d7246 (org.openqa.selenium.chrome.ChromeDriverService)
-15:49:57.981 INFO [ActiveSessions$1.onStop] - Removing session 234ca7f2f2fb0c491e56e9195cac95c3 (org.openqa.selenium.edge.EdgeDriverService)
-15:49:58.160 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+1605628284004	Marionette	INFO	Listening on port 55272
+17:51:24.249 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+17:51:24.283 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 3d1efd26-e35c-4f23-8e65-35989c66438f (org.openqa.selenium.firefox.GeckoDriverService)
+17:51:27.505 INFO [ActiveSessions$1.onStop] - Removing session c3e2c9b225eb2c0d992cf79674b5ad61 (org.openqa.selenium.edge.EdgeDriverService)
+17:51:27.656 INFO [ActiveSessionFactory.apply] - Capabilities are: {
   "acceptSslCerts": true,
   "browserName": "MicrosoftEdge",
   "edgeOptions": {
     "w3c": false,
     "args": [
-      "--no-sandbox"
+      "--no-sandbox",
+      "--headless"
     ]
   },
   "javascriptEnabled": true,
   "marionette": true,
   "name": "Validation Admin"
 }
-15:49:58.161 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.edge.EdgeDriverService)
-15:49:58.260 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+17:51:27.656 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.edge.EdgeDriverService)
+17:51:27.727 INFO [ActiveSessions$1.onStop] - Removing session b095191d05df3432225db637d6a6d3e8 (org.openqa.selenium.chrome.ChromeDriverService)
+17:51:27.837 INFO [ActiveSessionFactory.apply] - Capabilities are: {
   "acceptSslCerts": true,
   "browserName": "chrome",
   "chromeOptions": {
     "w3c": false,
     "args": [
-      "--no-sandbox"
+      "--no-sandbox",
+      "headless"
     ]
   },
   "javascriptEnabled": true,
   "marionette": true,
   "name": "Validation Admin"
 }
-15:49:58.260 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
-Starting MSEdgeDriver 86.0.622.69 (19046d7b09a04b7b7bbc327482322bc48fbfffc9) on port 15799
+17:51:27.837 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+Starting MSEdgeDriver 86.0.622.69 (19046d7b09a04b7b7bbc327482322bc48fbfffc9) on port 25782
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping MSEdgeDriver safe.
 MSEdgeDriver was started successfully.
-Starting ChromeDriver 86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}) on port 9934
+Starting ChromeDriver 86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}) on port 37431
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-15:50:02.200 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
-15:50:02.303 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session f2329f1bbf85faa5233f72d9504a6289 (org.openqa.selenium.edge.EdgeDriverService)
-15:50:02.342 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
-15:50:02.417 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 83e5b5e8f71876cdb674ce167d537182 (org.openqa.selenium.chrome.ChromeDriverService)
-1605621002687	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-TimedPromise/<@chrome://marionette/content/sync.js:228:19
-TimedPromise@chrome://marionette/content/sync.js:213:10
-interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
-webdriverClickElement@chrome://marionette/content/interaction.js:179:31
-1605621003226	Marionette	INFO	Stopped listening on port 58026
-
-###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
-
-
-###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
-
-15:50:11.808 INFO [ActiveSessions$1.onStop] - Removing session 756f5306-fde9-498d-a657-98097635756a (org.openqa.selenium.firefox.GeckoDriverService)
-15:50:11.978 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+1605628290116	Marionette	INFO	Stopped listening on port 55272
+17:51:30.260 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
+17:51:30.339 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session d211fb0afd4e01a6e9b7ea76801a29ab (org.openqa.selenium.edge.EdgeDriverService)
+17:51:30.544 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
+17:51:30.607 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 0e1bdb145b5f539b5e6ffcf42f6fd752 (org.openqa.selenium.chrome.ChromeDriverService)
+17:51:31.630 INFO [ActiveSessions$1.onStop] - Removing session 3d1efd26-e35c-4f23-8e65-35989c66438f (org.openqa.selenium.firefox.GeckoDriverService)
+17:51:31.747 INFO [ActiveSessionFactory.apply] - Capabilities are: {
   "acceptSslCerts": true,
   "browserName": "firefox",
   "javascriptEnabled": true,
   "marionette": true,
   "moz:firefoxOptions": {
     "args": [
-      "--no-sandbox"
+      "--no-sandbox",
+      "--headless"
     ]
   },
   "name": "Validation Admin"
 }
-15:50:11.979 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
-1605621012314	geckodriver	INFO	Listening on 127.0.0.1:21705
-1605621012634	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--no-sandbox" "-foreground" "-no-remote" "-profile" "C:\\Users\\Steve\\AppData\\Local\\Temp\\rust_mozprofile69927M"
-15:50:14.185 INFO [ActiveSessions$1.onStop] - Removing session f2329f1bbf85faa5233f72d9504a6289 (org.openqa.selenium.edge.EdgeDriverService)
-15:50:14.840 INFO [ActiveSessions$1.onStop] - Removing session 83e5b5e8f71876cdb674ce167d537182 (org.openqa.selenium.chrome.ChromeDriverService)
+17:51:31.748 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+1605628292006	geckodriver	INFO	Listening on 127.0.0.1:9069
+1605628292538	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--no-sandbox" "--headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Steve\\AppData\\Local\\Temp\\rust_mozprofilebdEbcu"
+*** You are running in headless mode.
 JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-1605621019953	Marionette	INFO	Listening on port 58335
-15:50:20.507 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
-15:50:20.512 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session a50a06ee-8ff2-4a21-972c-9ae079d990de (org.openqa.selenium.firefox.GeckoDriverService)
-1605621027436	Marionette	INFO	Stopped listening on port 58335
-
-###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
-
-15:50:29.022 INFO [ActiveSessions$1.onStop] - Removing session a50a06ee-8ff2-4a21-972c-9ae079d990de (org.openqa.selenium.firefox.GeckoDriverService)
+17:51:41.708 INFO [ActiveSessions$1.onStop] - Removing session 0e1bdb145b5f539b5e6ffcf42f6fd752 (org.openqa.selenium.chrome.ChromeDriverService)
+17:51:41.746 INFO [ActiveSessions$1.onStop] - Removing session d211fb0afd4e01a6e9b7ea76801a29ab (org.openqa.selenium.edge.EdgeDriverService)
+1605628301870	Marionette	INFO	Listening on port 55481
+17:51:42.066 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+17:51:42.074 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session b7669195-6907-4a86-9352-3b938d99e78e (org.openqa.selenium.firefox.GeckoDriverService)
+1605628308202	Marionette	INFO	Stopped listening on port 55481
+17:51:49.614 INFO [ActiveSessions$1.onStop] - Removing session b7669195-6907-4a86-9352-3b938d99e78e (org.openqa.selenium.firefox.GeckoDriverService)

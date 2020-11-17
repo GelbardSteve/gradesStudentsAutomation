@@ -8,7 +8,7 @@ export class ValidationAdminPage {
   ) {}
 
   async testAdmin() {
-    this.browserN === "chrome" ? this.f.createNewReport(this.testName) : null;
+    this.f.createNewReport(this.testName);
 
     await this.f.openBrowser({
       browser: this.browser,

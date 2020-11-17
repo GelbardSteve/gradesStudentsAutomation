@@ -6,6 +6,12 @@ export = {
   tags: ["LoginToAdminPage"],
   "Login To Admin Page": (browser: any) => {
     const browserN: any = browser.options.desiredCapabilities.browserName;
-    new LoginAdminPage(browser, f, selectors, "LoginToAdminPage.txt", browserN).testAdmin();
+    new LoginAdminPage(
+      browser,
+      f,
+      selectors,
+      "LoginToAdminPage",
+      browserN
+    ).testAdmin();
   },
 };

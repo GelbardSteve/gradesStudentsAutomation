@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "rm -rf dist/ && tsc",
-    "test": "npm run build && node nightwatch -e firefox,chrome,edge && npm run cleanup",
-    "cleanup": "taskkill /f /im chromedriver.exe & taskkill /f /im msedge.exe & taskkill /f /im geckodriver.exe"
+    "build": "rm -rf dist/ & tsc",
+    "start": "npm run build && npm run test && npm run cleanup",
+    "test": "node nightwatch -e firefox,chrome,edge",
+    "cleanup": "taskkill /f /im chromedriver.exe && taskkill /f /im msedge.exe && taskkill /f /im geckodriver.exe"
   },
   "author": "",
   "license": "ISC",

@@ -1,13 +1,13 @@
-Time: 15:49, Date: 11-17-2020
+Time: 17:39, Date: 11-17-2020
 
 SUCCEED: Command Open Browser Browser:chrome Data: URL | http://localhost:4200/
 SUCCEED: Command Open Browser Browser:MicrosoftEdge Data: URL | http://localhost:4200/
-SUCCEED: Command Insert Text Browser:MicrosoftEdge Data: User Name | #Name | admin
 SUCCEED: Command Insert Text Browser:chrome Data: User Name | #Name | admin
-SUCCEED: Command Insert Text Browser:MicrosoftEdge Data: Password | #Password | admin
+SUCCEED: Command Insert Text Browser:MicrosoftEdge Data: User Name | #Name | admin
 SUCCEED: Command Insert Text Browser:chrome Data: Password | #Password | admin
-SUCCEED: Command Click On Browser:MicrosoftEdge Data: Submit Button | body > app-root > login-parent-dashboard > div > login-admin-child > div > form > button
+SUCCEED: Command Insert Text Browser:MicrosoftEdge Data: Password | #Password | admin
 SUCCEED: Command Click On Browser:chrome Data: Submit Button | body > app-root > login-parent-dashboard > div > login-admin-child > div > form > button
+SUCCEED: Command Click On Browser:MicrosoftEdge Data: Submit Button | body > app-root > login-parent-dashboard > div > login-admin-child > div > form > button
 SUCCEED: Command Open Browser Browser:firefox Data: URL | http://localhost:4200/
 SUCCEED: Command Insert Text Browser:firefox Data: User Name | #Name | admin
 SUCCEED: Command Insert Text Browser:firefox Data: Password | #Password | admin

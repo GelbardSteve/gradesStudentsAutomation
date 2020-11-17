@@ -6,6 +6,12 @@ export = {
   tags: ["ValidationAdminPage"],
   "Validation Admin Page": (browser: any) => {
     const browserN: any = browser.options.desiredCapabilities.browserName;
-    new ValidationAdminPage(browser, f, selectors, "ValidationAdminPage.txt", browserN).testAdmin();
+    new ValidationAdminPage(
+      browser,
+      f,
+      selectors,
+      "ValidationAdminPage",
+      browserN
+    ).testAdmin();
   },
 };

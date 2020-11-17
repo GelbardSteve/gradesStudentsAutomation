@@ -1,12 +1,12 @@
 "use strict";
 const validationAdminPage_1 = require("../page-objects/validationAdminPage");
-const validationAdminPage_2 = require("../selectors/validationAdminPage");
+const loginAdminPage_1 = require("../selectors/loginAdminPage");
 const f = require("../service/exportFunction");
 module.exports = {
     tags: ["ValidationAdminPage"],
     "Validation Admin Page": (browser) => {
-        new validationAdminPage_1.GoogleSeach(browser, f, validationAdminPage_2.selectors, "ValidationAdminPage.txt").testAdmin();
-        browser.end();
+        const browserN = browser.options.desiredCapabilities.browserName;
+        new validationAdminPage_1.ValidationAdminPage(browser, f, loginAdminPage_1.selectors, "ValidationAdminPage.txt", browserN).testAdmin();
     },
 };
 //# sourceMappingURL=validationAdmin.js.map

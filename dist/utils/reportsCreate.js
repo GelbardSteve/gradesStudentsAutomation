@@ -23,7 +23,7 @@ const createNewReport = (NameOfReport) => {
 };
 exports.createNewReport = createNewReport;
 const insertDataToReport = (r) => {
-    fs.appendFile(`../studentGradesAutomation/reports/${r.reportName}.txt`, `${r.statusData ? "SUCCEED" : "FAILED"}: ${r.command} Data: ${r.cellData ? r.cellData.join(" | ") : null}\r\n`, (err) => {
+    fs.appendFile(`../studentGradesAutomation/reports/${r.reportName}.txt`, `${r.statusData ? "SUCCEED" : "FAILED"}: Command ${r.command} Browser:${r.browserName} Data: ${r.cellData ? r.cellData.join(" | ") : null}\r\n`, (err) => {
         if (err)
             throw err;
     });

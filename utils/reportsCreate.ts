@@ -5,6 +5,7 @@ export interface Report {
   command: string;
   statusData: boolean;
   reportName: string;
+  browserName: string;
 }
 
 //Get today date
@@ -34,9 +35,9 @@ const createNewReport = (NameOfReport) => {
 const insertDataToReport = (r: Report) => {
   fs.appendFile(
     `../studentGradesAutomation/reports/${r.reportName}.txt`,
-    `${r.statusData ? "SUCCEED" : "FAILED"}: ${
-      r.command
-    } Data: ${r.cellData ? r.cellData.join(" | "): null}\r\n`,
+    `${r.statusData ? "SUCCEED" : "FAILED"}: Command ${r.command} Browser:${
+      r.browserName
+    } Data: ${r.cellData ? r.cellData.join(" | ") : null}\r\n`,
     (err) => {
       if (err) throw err;
     }

@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "rm -rf dist/ && tsc",
-    "test": "npm run build && node nightwatch -e chrome && npm run cleanup",
-    "cleanup": "taskkill /f /im chromedriver.exe"
+    "test": "npm run build && node nightwatch -e firefox,chrome,edge && npm run cleanup",
+    "cleanup": "taskkill /f /im chromedriver.exe & taskkill /f /im msedge.exe & taskkill /f /im geckodriver.exe"
   },
   "author": "",
   "license": "ISC",

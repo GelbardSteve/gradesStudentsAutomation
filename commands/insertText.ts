@@ -7,7 +7,8 @@ const insertText = (c: Command) => {
         command: "Insert Text",
         cellData: c.data,
         statusData: res.status === 0, 
-        reportName: c.reportName
+        reportName: c.reportName,
+        browserName: c.browserName
       });
       c.browser.pause(300, () => {
         done();

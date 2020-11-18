@@ -1,0 +1,32 @@
+Time: 12:08, Date: 11-18-2020
+
+SUCCEED: Command Open Browser Browser:chrome Data: URL | http://localhost:4200/
+SUCCEED: Command Insert Text Browser:chrome Data: User Name | #Name | admin
+SUCCEED: Command Insert Text Browser:chrome Data: Password | #Password | admin
+SUCCEED: Command Open Browser Browser:MicrosoftEdge Data: URL | http://localhost:4200/
+SUCCEED: Command Click On Browser:chrome Data: Submit Button | body > app-root > login-parent-dashboard > div > login-admin-child > div > form > button
+SUCCEED: Command Insert Text Browser:MicrosoftEdge Data: User Name | #Name | admin
+SUCCEED: Command Click On Browser:chrome Data: Insert Student Btn | body > app-root > app-admin-dashboard > div > div > div:nth-child(1) > button
+SUCCEED: Command Insert Text Browser:MicrosoftEdge Data: Password | #Password | admin
+SUCCEED: Command Insert Text Browser:chrome Data: Student Name Field | #students_name | students99
+SUCCEED: Command Open Browser Browser:firefox Data: URL | http://localhost:4200/
+SUCCEED: Command Click On Browser:MicrosoftEdge Data: Submit Button | body > app-root > login-parent-dashboard > div > login-admin-child > div > form > button
+SUCCEED: Command Insert Text Browser:firefox Data: User Name | #Name | admin
+SUCCEED: Command Insert Text Browser:chrome Data: Student Number Field | #students_number | 99
+SUCCEED: Command Insert Text Browser:firefox Data: Password | #Password | admin
+SUCCEED: Command Click On Browser:MicrosoftEdge Data: Insert Student Btn | body > app-root > app-admin-dashboard > div > div > div:nth-child(1) > button
+SUCCEED: Command Insert Text Browser:chrome Data: Student Grades Field | #studentsGrades | History: 100
+SUCCEED: Command Insert Text Browser:MicrosoftEdge Data: Student Name Field | #students_name | students99
+SUCCEED: Command Click On Browser:firefox Data: Submit Button | body > app-root > login-parent-dashboard > div > login-admin-child > div > form > button
+SUCCEED: Command Insert Text Browser:chrome Data: Student Grades Field | #studentsGrades | History: 100
+SUCCEED: Command Insert Text Browser:MicrosoftEdge Data: Student Number Field | #students_number | 99
+SUCCEED: Command Click On Browser:firefox Data: Insert Student Btn | body > app-root > app-admin-dashboard > div > div > div:nth-child(1) > button
+SUCCEED: Command Click On Browser:chrome Data: Submit Btn | body > app-root > app-admin-dashboard > div > div > div:nth-child(1) > post-students-form > form > button
+SUCCEED: Command Insert Text Browser:firefox Data: Student Name Field | #students_name | students99
+SUCCEED: Command Insert Text Browser:firefox Data: Student Number Field | #students_number | 99
+SUCCEED: Command Insert Text Browser:MicrosoftEdge Data: Student Grades Field | #studentsGrades | History: 100
+SUCCEED: Command Insert Text Browser:firefox Data: Student Grades Field | #studentsGrades | History: 100
+SUCCEED: Command Insert Text Browser:MicrosoftEdge Data: Student Grades Field | #studentsGrades | History: 100
+SUCCEED: Command Insert Text Browser:firefox Data: Student Grades Field | #studentsGrades | History: 100
+SUCCEED: Command Click On Browser:MicrosoftEdge Data: Submit Btn | body > app-root > app-admin-dashboard > div > div > div:nth-child(1) > post-students-form > form > button
+SUCCEED: Command Click On Browser:firefox Data: Submit Btn | body > app-root > app-admin-dashboard > div > div > div:nth-child(1) > post-students-form > form > button

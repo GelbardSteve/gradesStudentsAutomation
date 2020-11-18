@@ -45,3 +45,14 @@ const insertDataToReport = (r: Report) => {
 };
 
 export { createNewReport, insertDataToReport };
+
+const createReportFor: string[] = [
+  "CreateNewStudent",
+  "LoginToAdminPage",
+  "ValidationAdminPage",
+  "ValidationCreateNewS"
+]
+
+createReportFor.forEach(repo => {
+  return createNewReport(repo)
+})

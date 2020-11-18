@@ -1,0 +1,38 @@
+Time: 12:08, Date: 11-18-2020
+
+SUCCEED: Command Open Browser Browser:chrome Data: URL | http://localhost:4200/
+SUCCEED: Command Insert Text Browser:chrome Data: User Name | #Name | admin
+SUCCEED: Command Insert Text Browser:chrome Data: Password | #Password | admin
+SUCCEED: Command Click On Browser:chrome Data: Submit Button | body > app-root > login-parent-dashboard > div > login-admin-child > div > form > button
+SUCCEED: Command Open Browser Browser:MicrosoftEdge Data: URL | http://localhost:4200/
+SUCCEED: Command Click On Browser:chrome Data: Insert Student Btn | body > app-root > app-admin-dashboard > div > div > div:nth-child(1) > button
+SUCCEED: Command Insert Text Browser:MicrosoftEdge Data: User Name | #Name | admin
+SUCCEED: Command Click On Browser:chrome Data: Student Name Field | #students_name | students99
+SUCCEED: Command Insert Text Browser:MicrosoftEdge Data: Password | #Password | admin
+SUCCEED: Command Click On Browser:chrome Data: Student Number Field | #students_number | 99
+SUCCEED: Command Click On Browser:MicrosoftEdge Data: Submit Button | body > app-root > login-parent-dashboard > div > login-admin-child > div > form > button
+SUCCEED: Command Get Text Browser:chrome Data: Student Name Field Validation | body > app-root > app-admin-dashboard > div > div > div:nth-child(1) > post-students-form > form > div > div:nth-child(1) > div:nth-child(1) > div | Name Is Required
+SUCCEED: Command Click On Browser:MicrosoftEdge Data: Insert Student Btn | body > app-root > app-admin-dashboard > div > div > div:nth-child(1) > button
+SUCCEED: Command Click On Browser:chrome Data: Student Grades Field | #studentsGrades | History: 100
+SUCCEED: Command Click On Browser:MicrosoftEdge Data: Student Name Field | #students_name | students99
+SUCCEED: Command Get Text Browser:chrome Data: Student Number Field Validation | body > app-root > app-admin-dashboard > div > div > div:nth-child(1) > post-students-form > form > div > div:nth-child(1) > div:nth-child(2) > div > div | Student Number Required
+SUCCEED: Command Click On Browser:MicrosoftEdge Data: Student Number Field | #students_number | 99
+SUCCEED: Command Click On Browser:chrome Data: Student Name Field | #students_name | students99
+SUCCEED: Command Get Text Browser:MicrosoftEdge Data: Student Name Field Validation | body > app-root > app-admin-dashboard > div > div > div:nth-child(1) > post-students-form > form > div > div:nth-child(1) > div:nth-child(1) > div | Name Is Required
+SUCCEED: Command Get Text Browser:chrome Data: Student Grades Field Validation | body > app-root > app-admin-dashboard > div > div > div:nth-child(1) > post-students-form > form > div > div.ml-1.ng-pristine.ng-invalid.ng-touched > div:nth-child(1) > div | studentsGrades Grades Required
+SUCCEED: Command Click On Browser:MicrosoftEdge Data: Student Grades Field | #studentsGrades | History: 100
+SUCCEED: Command Get Text Browser:MicrosoftEdge Data: Student Number Field Validation | body > app-root > app-admin-dashboard > div > div > div:nth-child(1) > post-students-form > form > div > div:nth-child(1) > div:nth-child(2) > div > div | Student Number Required
+SUCCEED: Command Click On Browser:MicrosoftEdge Data: Student Name Field | #students_name | students99
+SUCCEED: Command Get Text Browser:MicrosoftEdge Data: Student Grades Field Validation | body > app-root > app-admin-dashboard > div > div > div:nth-child(1) > post-students-form > form > div > div.ml-1.ng-pristine.ng-invalid.ng-touched > div:nth-child(1) > div | studentsGrades Grades Required
+SUCCEED: Command Open Browser Browser:firefox Data: URL | http://localhost:4200/
+SUCCEED: Command Insert Text Browser:firefox Data: User Name | #Name | admin
+SUCCEED: Command Insert Text Browser:firefox Data: Password | #Password | admin
+SUCCEED: Command Click On Browser:firefox Data: Submit Button | body > app-root > login-parent-dashboard > div > login-admin-child > div > form > button
+SUCCEED: Command Click On Browser:firefox Data: Insert Student Btn | body > app-root > app-admin-dashboard > div > div > div:nth-child(1) > button
+SUCCEED: Command Click On Browser:firefox Data: Student Name Field | #students_name | students99
+SUCCEED: Command Click On Browser:firefox Data: Student Number Field | #students_number | 99
+SUCCEED: Command Get Text Browser:firefox Data: Student Name Field Validation | body > app-root > app-admin-dashboard > div > div > div:nth-child(1) > post-students-form > form > div > div:nth-child(1) > div:nth-child(1) > div | Name Is Required
+SUCCEED: Command Click On Browser:firefox Data: Student Grades Field | #studentsGrades | History: 100
+SUCCEED: Command Get Text Browser:firefox Data: Student Number Field Validation | body > app-root > app-admin-dashboard > div > div > div:nth-child(1) > post-students-form > form > div > div:nth-child(1) > div:nth-child(2) > div > div | Student Number Required
+SUCCEED: Command Click On Browser:firefox Data: Student Name Field | #students_name | students99
+SUCCEED: Command Get Text Browser:firefox Data: Student Grades Field Validation | body > app-root > app-admin-dashboard > div > div > div:nth-child(1) > post-students-form > form > div > div.ml-1.ng-pristine.ng-invalid.ng-touched > div:nth-child(1) > div | studentsGrades Grades Required

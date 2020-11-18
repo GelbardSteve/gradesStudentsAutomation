@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.openBrowser = void 0;
 // open browser and go to choosen url//////////////////////////
 const openBrowser = (c) => {
+    console.log(c.data);
     return new Promise((done) => {
         c.browser.windowMaximize();
         c.browser.url(c.data[1], (res) => {

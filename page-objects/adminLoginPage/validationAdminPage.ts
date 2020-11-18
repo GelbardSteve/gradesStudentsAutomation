@@ -1,7 +1,7 @@
 export class ValidationAdminPage {
   constructor(
     private browser: any,
-    private f: typeof import("../service/exportFunction"),
+    private f: typeof import("../../service/exportFunction"),
     private data: { URL: string[]; UserName: string[]; ValidationUserName: string[]; Password: string[]; ValidationPassword: string[]; SubmitBtn?: string[]; },
     private testName: string,
     private browserN: string

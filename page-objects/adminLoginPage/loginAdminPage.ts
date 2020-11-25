@@ -8,7 +8,6 @@ export class LoginAdminPage {
   ) {}
 
   async testAdmin() {
-    console.log(this.data.URL)
     await this.f.openBrowser({
       browser: this.browser,
       data: this.data.URL,

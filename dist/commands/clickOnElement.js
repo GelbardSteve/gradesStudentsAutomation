@@ -12,7 +12,7 @@ const clickOnElement = (c) => {
                 cellData: c.data,
                 statusData: res.status === 0,
                 reportName: c.reportName,
-                browserName: c.browserName
+                browserName: c.browserName,
             });
             c.browser.pause(300, () => {
                 done();

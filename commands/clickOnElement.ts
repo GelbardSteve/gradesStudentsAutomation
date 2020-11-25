@@ -1,7 +1,7 @@
 import { Command } from "./commandInterfaces";
 //click on an element////////////////////////////////////////
 const clickOnElement = (c: Command) => {
-  return new Promise((done) => {
+  return new Promise<void>((done) => {
     c.browser
       .waitForElementVisible(c.data[1], 8000, false)
       .click(c.data[1], (res) => {
@@ -10,7 +10,7 @@ const clickOnElement = (c: Command) => {
           cellData: c.data,
           statusData: res.status === 0,
           reportName: c.reportName,
-          browserName: c.browserName
+          browserName: c.browserName,
         });
         c.browser.pause(300, () => {
           done();
@@ -19,4 +19,4 @@ const clickOnElement = (c: Command) => {
   });
 };
 //////////////////////////////////////////////////////////
-export { clickOnElement }
+export { clickOnElement };

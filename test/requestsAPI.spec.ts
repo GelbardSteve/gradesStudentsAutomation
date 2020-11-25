@@ -18,7 +18,6 @@ const updateStudentGrades = {
 const deleteStudentGrades = {};
 
 describe("run API requests", () => {
-
   it("should create student", async () => {
     await sendRequest
       .postRequest("http://localhost:3000/students2", postStudent)
@@ -41,7 +40,7 @@ describe("run API requests", () => {
       .then((res) => {
         updateStudentGrades["students_id"] = res.data[0].students_id;
         deleteStudentGrades["students_id"] = res.data[0].students_id;
-        expect(res.data[0]).to.have.property("students_number", 101);
+        expect(res.data[0]).to.include({ students_number: 101 });
       });
   });
 
@@ -57,8 +56,7 @@ describe("run API requests", () => {
     await sendRequest
       .deleteRequest("http://localhost:3000/students2", deleteStudentGrades)
       .then((res) => {
-        expect(res.data.succeed).to.equal(true);
+        expect(res.data).to.include({ succeed: true });
       });
   });
-
 });

@@ -1,14 +1,14 @@
 export class LoginAdminPage {
   constructor(
-    private browser: any,
-    private f: typeof import("../service/exportFunction"),
-    private data: { URL: string[]; UserName: string[]; ValidationUserName?: string[]; Password: string[]; ValidationPassword?: string[]; SubmitBtn: string[]; },
-    private testName: string,
-    private browserN: string
+    protected browser: any,
+    protected f: typeof import("../../service/exportFunction"),
+    protected data: any,
+    protected testName: string,
+    protected browserN: string
   ) {}
 
   async testAdmin() {
-
+    console.log(this.data.URL)
     await this.f.openBrowser({
       browser: this.browser,
       data: this.data.URL,

@@ -5,9 +5,9 @@
 
   <testsuite name="validationAdmin"
     errors="0" failures="0" hostname="" id="" package="validationAdmin" skipped="0"
-    tests="1" time="10.83" timestamp="">
+    tests="1" time="9.714" timestamp="">
   
-    <testcase name="Validation Admin Page" classname="validationAdmin" time="10.83" assertions="5">
+    <testcase name="Validation Admin Page" classname="validationAdmin" time="9.714" assertions="5">
 
     
 

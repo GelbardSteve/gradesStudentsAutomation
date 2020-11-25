@@ -1,13 +1,13 @@
-import { ValidationAdminPage } from "../page-objects/validationAdminPage";
-import { selectors } from "../selectors/loginAdminPage";
+import { ValidationAdminPage } from "../page-objects/adminLoginPage/validationAdminPage";
+import { loginAdminS } from "../selectors/loginAdminPage";
 import * as f from "../service/exportFunction";
 
-const testName: string = "ValidationAdminPage";
-f.createNewReport(testName);
+const testName: string = "validationAdmin";
+
 export = {
-  tags: ["ValidationAdminPage"],
+  tags: [testName],
   "Validation Admin Page": (browser: any) => {
     const browserN: any = browser.options.desiredCapabilities.browserName;
-    new ValidationAdminPage(browser, f, selectors, testName, browserN).testAdmin();
+    new ValidationAdminPage(browser, f, loginAdminS, testName, browserN).testAdmin();
   },
 };

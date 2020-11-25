@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.selectors = void 0;
-const selectors = {
+exports.loginAdminS = void 0;
+const loginAdminS = {
     URL: [
         "URL",
         "http://localhost:4200/"
@@ -31,5 +31,5 @@ const selectors = {
         "body > app-root > login-parent-dashboard > div > login-admin-child > div > form > button"
     ]
 };
-exports.selectors = selectors;
+exports.loginAdminS = loginAdminS;
 //# sourceMappingURL=loginAdminPage.js.map

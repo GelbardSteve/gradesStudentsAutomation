@@ -1,17 +1,17 @@
-Time: 17:51, Date: 11-17-2020
+Time: 11:18, Date: 11-25-2020
 
-SUCCEED: Command Open Browser Browser:chrome Data: URL | http://localhost:4200/
 SUCCEED: Command Open Browser Browser:MicrosoftEdge Data: URL | http://localhost:4200/
 SUCCEED: Command Click On Browser:MicrosoftEdge Data: User Name | #Name | admin
+SUCCEED: Command Click On Browser:MicrosoftEdge Data: Password | #Password | admin
+SUCCEED: Command Get Text Browser:MicrosoftEdge Data: UserName Validation | body > app-root > login-parent-dashboard > div > login-admin-child > div > form > div > div:nth-child(1) > div:nth-child(3) > div | Admin Name Is Required
+SUCCEED: Command Click On Browser:MicrosoftEdge Data: User Name | #Name | admin
+SUCCEED: Command Open Browser Browser:chrome Data: URL | http://localhost:4200/
+SUCCEED: Command Get Text Browser:MicrosoftEdge Data: Password Validation | body > app-root > login-parent-dashboard > div > login-admin-child > div > form > div > div:nth-child(2) > div:nth-child(3) > div | Admin Password Is Required
 SUCCEED: Command Click On Browser:chrome Data: User Name | #Name | admin
 SUCCEED: Command Click On Browser:chrome Data: Password | #Password | admin
-SUCCEED: Command Click On Browser:MicrosoftEdge Data: Password | #Password | admin
 SUCCEED: Command Get Text Browser:chrome Data: UserName Validation | body > app-root > login-parent-dashboard > div > login-admin-child > div > form > div > div:nth-child(1) > div:nth-child(3) > div | Admin Name Is Required
-SUCCEED: Command Get Text Browser:MicrosoftEdge Data: UserName Validation | body > app-root > login-parent-dashboard > div > login-admin-child > div > form > div > div:nth-child(1) > div:nth-child(3) > div | Admin Name Is Required
 SUCCEED: Command Click On Browser:chrome Data: User Name | #Name | admin
-SUCCEED: Command Click On Browser:MicrosoftEdge Data: User Name | #Name | admin
 SUCCEED: Command Get Text Browser:chrome Data: Password Validation | body > app-root > login-parent-dashboard > div > login-admin-child > div > form > div > div:nth-child(2) > div:nth-child(3) > div | Admin Password Is Required
-SUCCEED: Command Get Text Browser:MicrosoftEdge Data: Password Validation | body > app-root > login-parent-dashboard > div > login-admin-child > div > form > div > div:nth-child(2) > div:nth-child(3) > div | Admin Password Is Required
 SUCCEED: Command Open Browser Browser:firefox Data: URL | http://localhost:4200/
 SUCCEED: Command Click On Browser:firefox Data: User Name | #Name | admin
 SUCCEED: Command Click On Browser:firefox Data: Password | #Password | admin

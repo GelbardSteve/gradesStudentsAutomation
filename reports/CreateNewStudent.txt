@@ -1,0 +1,22 @@
+Time: 11:18, Date: 11-25-2020
+
+SUCCEED: Command Open Browser Browser:chrome Data: URL | http://localhost:4200/
+SUCCEED: Command Open Browser Browser:MicrosoftEdge Data: URL | http://localhost:4200/
+SUCCEED: Command Insert Text Browser:chrome Data: User Name | #Name | admin
+SUCCEED: Command Insert Text Browser:chrome Data: Password | #Password | admin
+SUCCEED: Command Click On Browser:chrome Data: Submit Button | body > app-root > login-parent-dashboard > div > login-admin-child > div > form > button
+SUCCEED: Command Insert Text Browser:MicrosoftEdge Data: User Name | #Name | admin
+SUCCEED: Command Click On Browser:chrome Data: Insert Student Btn | body > app-root > app-admin-dashboard > div > div > div:nth-child(1) > button
+SUCCEED: Command Insert Text Browser:MicrosoftEdge Data: Password | #Password | admin
+SUCCEED: Command Insert Text Browser:chrome Data: Student Name Field | #students_name | students99
+SUCCEED: Command Click On Browser:MicrosoftEdge Data: Submit Button | body > app-root > login-parent-dashboard > div > login-admin-child > div > form > button
+SUCCEED: Command Insert Text Browser:chrome Data: Student Number Field | #students_number | 99
+SUCCEED: Command Open Browser Browser:firefox Data: URL | http://localhost:4200/
+SUCCEED: Command Insert Text Browser:chrome Data: Student Grades Field | #studentsGrades | History: 100
+SUCCEED: Command Insert Text Browser:firefox Data: User Name | #Name | admin
+SUCCEED: Command Insert Text Browser:firefox Data: Password | #Password | admin
+SUCCEED: Command Insert Text Browser:chrome Data: Student Grades Field | #studentsGrades | History: 100
+SUCCEED: Command Click On Browser:firefox Data: Submit Button | body > app-root > login-parent-dashboard > div > login-admin-child > div > form > button
+SUCCEED: Command Click On Browser:chrome Data: Submit Btn | body > app-root > app-admin-dashboard > div > div > div:nth-child(1) > post-students-form > form > button
+SUCCEED: Command Click On Browser:chrome Data: Go To Next Page | body > app-root > app-admin-dashboard > div > pagination-controls > pagination-template > ul > li:nth-child(4) > a
+SUCCEED: Command Click On Browser:chrome Data: Delete User | body > app-root > app-admin-dashboard > div > table > tbody > tr:nth-child(3) > td:nth-child(4) > div > button.btn.btn-danger.m-1.btn-sm

@@ -1,4 +1,4 @@
-const selectors = {
+const loginAdminS = {
     URL: [
         "URL",
         "http://localhost:4200/"
@@ -29,4 +29,4 @@ const selectors = {
     ]
 }
 
-export { selectors }
+export { loginAdminS }

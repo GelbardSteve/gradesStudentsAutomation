@@ -1,0 +1,3 @@
+In order to run this project:
+1. Open & Install "studentsGradesTable" angular project with npm start
+2. Open & Install "studentGradesAutomation" automation project with npm i then npm start

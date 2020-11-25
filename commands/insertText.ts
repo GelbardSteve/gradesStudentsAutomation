@@ -1,6 +1,6 @@
 import { Command } from "./commandInterfaces";
 //insert value to element/////////////////////////////////////
-const insertText = (c?: Command) => {
+const insertText = (c: Command) => {
   return new Promise<void>((done) => {
     c.browser.setValue(c.data[1], c.data[2], (res) => {
       c.report({

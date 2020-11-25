@@ -1,6 +1,6 @@
 import { Command } from "./commandInterfaces";
 //get text/////////////////////////////////////
-const getText = (c?: Command) => {
+const getText = (c: Command) => {
   return new Promise<void>((done) => {
     c.browser
       .waitForElementVisible(c.data[1], 10000, false)

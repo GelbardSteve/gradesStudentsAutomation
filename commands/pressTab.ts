@@ -1,6 +1,6 @@
 import { Command } from "./commandInterfaces";
 //
-const pressTab = (c?: Command) => {
+const pressTab = (c: Command) => {
   return new Promise<void>((done) => {
     c.browser.keys(c.browser.Keys.TAB, (res) => {
       c.report({

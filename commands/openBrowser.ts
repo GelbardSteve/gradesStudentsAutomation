@@ -1,6 +1,6 @@
 import { Command } from "./commandInterfaces";
 // open browser and go to choosen url//////////////////////////
-const openBrowser = (c?: Command) => {
+const openBrowser = (c: Command) => {
   return new Promise<void>((done) => {
     c.browser.windowMaximize();
     c.browser.url(c.data[1], (res) => {

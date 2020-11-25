@@ -1,14 +1,14 @@
-Time: 11:18, Date: 11-25-2020
+Time: 21:29, Date: 11-25-2020
 
-SUCCEED: Command Open Browser Browser:MicrosoftEdge Data: URL | http://localhost:4200/
-SUCCEED: Command Insert Text Browser:MicrosoftEdge Data: User Name | #Name | admin
-SUCCEED: Command Insert Text Browser:MicrosoftEdge Data: Password | #Password | admin
-SUCCEED: Command Click On Browser:MicrosoftEdge Data: Submit Button | body > app-root > login-parent-dashboard > div > login-admin-child > div > form > button
-SUCCEED: Command Open Browser Browser:chrome Data: URL | http://localhost:4200/
-SUCCEED: Command Insert Text Browser:chrome Data: User Name | #Name | admin
-SUCCEED: Command Insert Text Browser:chrome Data: Password | #Password | admin
-SUCCEED: Command Click On Browser:chrome Data: Submit Button | body > app-root > login-parent-dashboard > div > login-admin-child > div > form > button
-SUCCEED: Command Open Browser Browser:firefox Data: URL | http://localhost:4200/
-SUCCEED: Command Insert Text Browser:firefox Data: User Name | #Name | admin
-SUCCEED: Command Insert Text Browser:firefox Data: Password | #Password | admin
-SUCCEED: Command Click On Browser:firefox Data: Submit Button | body > app-root > login-parent-dashboard > div > login-admin-child > div > form > button
+SUCCEED: Browser:MicrosoftEdge | Command Open Browser URL | http://localhost:4200/
+SUCCEED: Browser:MicrosoftEdge | Command Insert Text User Name | #Name | admin
+SUCCEED: Browser:MicrosoftEdge | Command Insert Text Password | #Password | admin
+SUCCEED: Browser:MicrosoftEdge | Command Click On Submit Button | body > app-root > login-parent-dashboard > div > login-admin-child > div > form > button
+SUCCEED: Browser:chrome | Command Open Browser URL | http://localhost:4200/
+SUCCEED: Browser:chrome | Command Insert Text User Name | #Name | admin
+SUCCEED: Browser:firefox | Command Open Browser URL | http://localhost:4200/
+SUCCEED: Browser:firefox | Command Insert Text User Name | #Name | admin
+SUCCEED: Browser:chrome | Command Insert Text Password | #Password | admin
+SUCCEED: Browser:firefox | Command Insert Text Password | #Password | admin
+SUCCEED: Browser:chrome | Command Click On Submit Button | body > app-root > login-parent-dashboard > div > login-admin-child > div > form > button
+SUCCEED: Browser:firefox | Command Click On Submit Button | body > app-root > login-parent-dashboard > div > login-admin-child > div > form > button

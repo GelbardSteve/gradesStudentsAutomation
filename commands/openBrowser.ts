@@ -1,7 +1,7 @@
 import { Command } from "./commandInterfaces";
 // open browser and go to choosen url//////////////////////////
-const openBrowser = (c: Command) => {
-  return new Promise((done) => {
+const openBrowser = (c?: Command) => {
+  return new Promise<void>((done) => {
     c.browser.windowMaximize();
     c.browser.url(c.data[1], (res) => {
       c.report({
@@ -9,7 +9,7 @@ const openBrowser = (c: Command) => {
         cellData: c.data,
         statusData: res.status === 0,
         reportName: c.reportName,
-        browserName: c.browserName
+        browserName: c.browserName,
       });
       c.browser.pause(300, () => {
         done();

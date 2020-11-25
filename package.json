@@ -1,19 +1,28 @@
 {
-  "name": "typescript",
+  "name": "automation-project",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "build": "rm -rf dist/ & tsc",
-    "start": "npm run build && npm run test && npm run cleanup",
-    "test": "node nightwatch -e firefox,chrome,edge",
+    "start": "npm run build && npm run test:main && npm run test:entity && npm run cleanup",
+    "test:main": "node nightwatch -e firefox,chrome,edge",
+    "test:entity": "mocha -r ./node_modules/ts-node/register ./test/**/*.spec.ts",
     "cleanup": "taskkill /f /im chromedriver.exe && taskkill /f /im msedge.exe && taskkill /f /im geckodriver.exe"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/jasmine": "^3.6.2",
+    "@types/mocha": "^8.0.4",
+    "axios": "^0.21.0",
+    "chai": "^4.2.0",
+    "jasmine": "^3.6.3",
+    "mocha": "^8.2.1",
     "nightwatch": "^1.5.1",
-    "ts-loader": "^8.0.11"
+    "ts-loader": "^8.0.11",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.1.2"
   },
   "devDependencies": {
     "@types/node": "^14.14.7"

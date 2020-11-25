@@ -41,9 +41,9 @@ fs.readdir("../studentGradesAutomation/tests", (err, files) => {
 const insertDataToReport = (r: Report) => {
   fs.appendFile(
     `../studentGradesAutomation/reports/${r.reportName}.txt`,
-    `${r.statusData ? "SUCCEED" : "FAILED"}: Command ${r.command} Browser:${
+    `${r.statusData ? "SUCCEED" : "FAILED"}: Browser:${
       r.browserName
-    } Data: ${r.cellData ? r.cellData.join(" | ") : null}\r\n`,
+    } | Command ${r.command} ${r.cellData ? r.cellData.join(" | ") : null}\r\n`,
     (err) => {
       if (err) throw err;
     }
@@ -51,4 +51,3 @@ const insertDataToReport = (r: Report) => {
 };
 
 export { createNewReport, insertDataToReport };
-

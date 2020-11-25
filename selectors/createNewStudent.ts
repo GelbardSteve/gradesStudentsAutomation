@@ -33,6 +33,14 @@ const createNewUserS = {
         "body > app-root > app-admin-dashboard > div > div > div:nth-child(1) > post-students-form > form > div > div.ml-1.ng-pristine.ng-invalid.ng-touched > div:nth-child(1) > div",
         "studentsGrades Grades Required"
     ],
+    GoToNextPage: [
+        "Go To Next Page",
+        "body > app-root > app-admin-dashboard > div > pagination-controls > pagination-template > ul > li:nth-child(4) > a"
+    ],
+    DeleteUser: [
+        "Delete User",
+        "body > app-root > app-admin-dashboard > div > table > tbody > tr:nth-child(3) > td:nth-child(4) > div > button.btn.btn-danger.m-1.btn-sm"
+    ],
     SubmitBtn: [
         "Submit Btn",
         "body > app-root > app-admin-dashboard > div > div > div:nth-child(1) > post-students-form > form > button"

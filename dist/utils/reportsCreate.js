@@ -22,6 +22,11 @@ const createNewReport = (NameOfReport) => {
     });
 };
 exports.createNewReport = createNewReport;
+fs.readdir("../studentGradesAutomation/tests", (err, files) => {
+    files.forEach((file) => {
+        return createNewReport(file.split(".")[0]);
+    });
+});
 const insertDataToReport = (r) => {
     fs.appendFile(`../studentGradesAutomation/reports/${r.reportName}.txt`, `${r.statusData ? "SUCCEED" : "FAILED"}: Command ${r.command} Browser:${r.browserName} Data: ${r.cellData ? r.cellData.join(" | ") : null}\r\n`, (err) => {
         if (err)
@@ -29,13 +34,4 @@ const insertDataToReport = (r) => {
     });
 };
 exports.insertDataToReport = insertDataToReport;
-const createReportFor = [
-    "CreateNewStudent",
-    "LoginToAdminPage",
-    "ValidationAdminPage",
-    "ValidationCreateNewS"
-];
-createReportFor.forEach(repo => {
-    return createNewReport(repo);
-});
 //# sourceMappingURL=reportsCreate.js.map

@@ -32,6 +32,12 @@ const createNewReport = (NameOfReport) => {
   });
 };
 
+fs.readdir("../studentGradesAutomation/tests", (err, files) => {
+  files.forEach((file) => {
+    return createNewReport(file.split(".")[0]);
+  });
+});
+
 const insertDataToReport = (r: Report) => {
   fs.appendFile(
     `../studentGradesAutomation/reports/${r.reportName}.txt`,
@@ -46,13 +52,3 @@ const insertDataToReport = (r: Report) => {
 
 export { createNewReport, insertDataToReport };
 
-const createReportFor: string[] = [
-  "CreateNewStudent",
-  "LoginToAdminPage",
-  "ValidationAdminPage",
-  "ValidationCreateNewS"
-]
-
-createReportFor.forEach(repo => {
-  return createNewReport(repo)
-})

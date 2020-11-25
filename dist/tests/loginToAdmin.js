@@ -2,7 +2,7 @@
 const loginAdminPage_1 = require("../page-objects/adminLoginPage/loginAdminPage");
 const loginAdminPage_2 = require("../selectors/loginAdminPage");
 const f = require("../service/exportFunction");
-const testName = "LoginToAdminPage";
+const testName = "loginToAdmin";
 module.exports = {
     tags: [testName],
     "Login To Admin Page": (browser) => {

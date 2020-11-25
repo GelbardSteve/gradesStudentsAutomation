@@ -6,7 +6,7 @@ import { loginAdminS } from "../selectors/loginAdminPage";
 
 import * as f from "../service/exportFunction";
 
-const testName: string = "ValidationCreateNewS";
+const testName: string = "validationCreateNewS";
 
 
 

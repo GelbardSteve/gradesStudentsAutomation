@@ -2,7 +2,7 @@
 const validationAdminPage_1 = require("../page-objects/adminLoginPage/validationAdminPage");
 const loginAdminPage_1 = require("../selectors/loginAdminPage");
 const f = require("../service/exportFunction");
-const testName = "ValidationAdminPage";
+const testName = "validationAdmin";
 module.exports = {
     tags: [testName],
     "Validation Admin Page": (browser) => {

@@ -2,7 +2,7 @@ import { LoginAdminPage } from "../page-objects/adminLoginPage/loginAdminPage";
 import { loginAdminS } from "../selectors/loginAdminPage";
 import * as f from "../service/exportFunction";
 
-const testName: string = "LoginToAdminPage";
+const testName: string = "loginToAdmin";
 
 export = {
   tags: [testName],

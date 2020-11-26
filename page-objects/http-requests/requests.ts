@@ -8,8 +8,8 @@ export class SendRequest {
     return res;
   }
 
-  async getRequest(url) {
-    const res = await axios.get(`${url}/101`);
+  async getRequest(url: string) {
+    const res = await axios.get(`${url}`);
     return res;
   }
 

@@ -36,7 +36,7 @@ describe("run API requests", () => {
 
   it("should get student data", async () => {
     await sendRequest
-      .getRequest("http://localhost:3000/students2")
+      .getRequest("http://localhost:3000/students2/101")
       .then((res) => {
         updateStudentGrades["students_id"] = res.data[0].students_id;
         deleteStudentGrades["students_id"] = res.data[0].students_id;

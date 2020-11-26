@@ -43,7 +43,7 @@ const insertDataToReport = (r: Report) => {
     `../studentGradesAutomation/reports/${r.reportName}.txt`,
     `${r.statusData ? "SUCCEED" : "FAILED"}: Browser:${
       r.browserName
-    } | Command ${r.command} ${r.cellData ? r.cellData.join(" | ") : null}\r\n`,
+    } | Command: ${r.command} ${r.cellData ? r.cellData.join(" | ") : null}\r\n`,
     (err) => {
       if (err) throw err;
     }

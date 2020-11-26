@@ -54,7 +54,7 @@ describe("run API requests", () => {
 
   it("should delete student", async () => {
     await sendRequest
-      .deleteRequest("http://localhost:3000/students2", deleteStudentGrades)
+      .deleteRequest("http://localhost:3000/students2", deleteStudentGrades, "students_id")
       .then((res) => {
         expect(res.data).to.include({ succeed: true });
       });

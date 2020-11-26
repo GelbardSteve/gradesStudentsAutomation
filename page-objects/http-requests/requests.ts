@@ -9,7 +9,7 @@ export class SendRequest {
   }
 
   async getRequest(url: string) {
-    const res = await axios.get(`${url}`);
+    const res = await axios.get(url);
     return res;
   }
 
@@ -18,8 +18,8 @@ export class SendRequest {
     return res;
   }
 
-  async deleteRequest(url: string, data: {}) {
-    const res = await axios.delete(`${url}/${data["students_id"]}`);
+  async deleteRequest(url: string, data: {}, whatToDelete: string) {
+    const res = await axios.delete(`${url}/${data[whatToDelete]}`);
     return res;
   }
 }

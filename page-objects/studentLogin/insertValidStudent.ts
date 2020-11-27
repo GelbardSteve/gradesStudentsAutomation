@@ -1,20 +1,19 @@
-export class ValidationAdminPage {
+export class InsertValidStudent {
   constructor(
     private browser: any,
     private f: typeof import("../../service/exportFunction"),
     private data: {
+      LoginAsStudentButton: string[];
+      StudentNumberField: string[];
+      SubmitButton: string[];
+      StudentTableGrades: string[];
       URL: string[];
-      UserName: string[];
-      ValidationUserName: string[];
-      Password: string[];
-      ValidationPassword: string[];
-      SubmitBtn?: string[];
     },
     private testName: string,
     private browserN: string
   ) {}
 
-  async testAdmin() {
+  async testLoginS() {
     await this.f.openBrowser({
       browser: this.browser,
       data: this.data.URL,
@@ -24,35 +23,28 @@ export class ValidationAdminPage {
     });
     await this.f.clickOnElement({
       browser: this.browser,
-      data: this.data.UserName,
+      data: this.data.LoginAsStudentButton,
+      report: this.f.insertDataToReport,
+      reportName: this.testName,
+      browserName: this.browserN,
+    });
+    await this.f.insertText({
+      browser: this.browser,
+      data: this.data.StudentNumberField,
       report: this.f.insertDataToReport,
       reportName: this.testName,
       browserName: this.browserN,
     });
     await this.f.clickOnElement({
       browser: this.browser,
-      data: this.data.Password,
+      data: this.data.SubmitButton,
       report: this.f.insertDataToReport,
       reportName: this.testName,
       browserName: this.browserN,
     });
-    await this.f.getText({
+    await this.f.waitForElement({
       browser: this.browser,
-      data: this.data.ValidationUserName,
-      report: this.f.insertDataToReport,
-      reportName: this.testName,
-      browserName: this.browserN,
-    });
-    await this.f.clickOnElement({
-      browser: this.browser,
-      data: this.data.UserName,
-      report: this.f.insertDataToReport,
-      reportName: this.testName,
-      browserName: this.browserN,
-    });
-    await this.f.getText({
-      browser: this.browser,
-      data: this.data.ValidationPassword,
+      data: this.data.StudentTableGrades,
       report: this.f.insertDataToReport,
       reportName: this.testName,
       browserName: this.browserN,

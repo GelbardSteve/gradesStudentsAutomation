@@ -1,5 +1,5 @@
 import { Command } from "./commandInterfaces";
-//insert value to element/////////////////////////////////////
+//insert value to element//////////////////////
 const insertText = (c: Command) => {
   return new Promise<void>((done) => {
     c.browser.setValue(c.data[1], c.data[2], (res) => {
@@ -16,5 +16,5 @@ const insertText = (c: Command) => {
     });
   });
 };
-
+////////////////////////////////////////////////
 export { insertText };

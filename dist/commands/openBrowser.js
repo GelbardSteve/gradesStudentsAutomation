@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.openBrowser = void 0;
-// open browser and go to choosen url//////////////////////////
+// open browser and go to the site////////////
 const openBrowser = (c) => {
     return new Promise((done) => {
         c.browser.windowMaximize();

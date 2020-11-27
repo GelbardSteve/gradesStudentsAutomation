@@ -1,20 +1,13 @@
-export class ValidationAdminPage {
+export class StudentLoginValidation {
   constructor(
     private browser: any,
     private f: typeof import("../../service/exportFunction"),
-    private data: {
-      URL: string[];
-      UserName: string[];
-      ValidationUserName: string[];
-      Password: string[];
-      ValidationPassword: string[];
-      SubmitBtn?: string[];
-    },
+    private data,
     private testName: string,
     private browserN: string
   ) {}
 
-  async testAdmin() {
+  async testLoginSV() {
     await this.f.openBrowser({
       browser: this.browser,
       data: this.data.URL,
@@ -24,35 +17,28 @@ export class ValidationAdminPage {
     });
     await this.f.clickOnElement({
       browser: this.browser,
-      data: this.data.UserName,
+      data: this.data.LoginAsStudentButton,
       report: this.f.insertDataToReport,
       reportName: this.testName,
       browserName: this.browserN,
     });
     await this.f.clickOnElement({
       browser: this.browser,
-      data: this.data.Password,
-      report: this.f.insertDataToReport,
-      reportName: this.testName,
-      browserName: this.browserN,
-    });
-    await this.f.getText({
-      browser: this.browser,
-      data: this.data.ValidationUserName,
+      data: this.data.StudentNumberField,
       report: this.f.insertDataToReport,
       reportName: this.testName,
       browserName: this.browserN,
     });
     await this.f.clickOnElement({
       browser: this.browser,
-      data: this.data.UserName,
+      data: this.data.HeaderOfStudent,
       report: this.f.insertDataToReport,
       reportName: this.testName,
       browserName: this.browserN,
     });
     await this.f.getText({
       browser: this.browser,
-      data: this.data.ValidationPassword,
+      data: this.data.StudentNumberFieldValidation,
       report: this.f.insertDataToReport,
       reportName: this.testName,
       browserName: this.browserN,

@@ -1,8 +1,8 @@
 import { UpdateStudent } from "../page-objects/testStudentTable/updateStudent";
 import { LoginAdminPage } from "../page-objects/adminLoginPage/loginAdminPage";
 
-import { loginAdminS } from "../selectors/loginAdminPage";
-import { updateStudentS } from "../selectors/updateStudent";
+import { loginAdminS } from "../selectors/adminLoginPage/loginAdminPage";
+import { updateStudentS } from "../selectors/testStudentTable/updateStudent";
 
 import * as f from "../service/exportFunction";
 

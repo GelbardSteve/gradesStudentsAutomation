@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.clickOnElement = void 0;
-//click on an element////////////////////////////////////////
+//click on an element////////////////////////////////////
 const clickOnElement = (c) => {
     return new Promise((done) => {
         c.browser

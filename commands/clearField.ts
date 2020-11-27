@@ -1,5 +1,5 @@
 import { Command } from "./commandInterfaces";
-//clear value function///////////////////////////////////////
+//clear value function///////////////////////////////////
 const clearField = (c: Command) => {
   return new Promise<void>((done) => {
     c.browser

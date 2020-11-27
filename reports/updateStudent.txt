@@ -1,4 +1,4 @@
-Time: 2:10, Date: 11-27-2020
+Time: 16:44, Date: 11-27-2020
 
 SUCCEED: Browser:MicrosoftEdge | Command: Open Browser URL | http://localhost:4200/
 SUCCEED: Browser:MicrosoftEdge | Command: Insert Text To User Name | #Name | admin
@@ -7,8 +7,8 @@ SUCCEED: Browser:MicrosoftEdge | Command: Click On Submit Button | body > app-ro
 SUCCEED: Browser:MicrosoftEdge | Command: Click On Update Button | body > app-root > app-admin-dashboard > div > table > tbody > tr:nth-child(1) > td:nth-child(4) > div > button.btn.btn-secondary.m-1.btn-sm
 SUCCEED: Browser:chrome | Command: Open Browser URL | http://localhost:4200/
 SUCCEED: Browser:MicrosoftEdge | Command: Click On Update Field | #studentsGrades | History: 100
-SUCCEED: Browser:MicrosoftEdge | Command: Clear Value Of Update Field | #studentsGrades | History: 100
 SUCCEED: Browser:chrome | Command: Insert Text To User Name | #Name | admin
+SUCCEED: Browser:MicrosoftEdge | Command: Clear Value Of Update Field | #studentsGrades | History: 100
 SUCCEED: Browser:chrome | Command: Insert Text To Password | #Password | admin
 SUCCEED: Browser:MicrosoftEdge | Command: Insert Text To Update Field | #studentsGrades | History: 100
 SUCCEED: Browser:chrome | Command: Click On Submit Button | body > app-root > login-parent-dashboard > div > login-admin-child > div > form > button

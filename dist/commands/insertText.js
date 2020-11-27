@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.insertText = void 0;
-//insert value to element/////////////////////////////////////
+//insert value to element//////////////////////
 const insertText = (c) => {
     return new Promise((done) => {
         c.browser.setValue(c.data[1], c.data[2], (res) => {

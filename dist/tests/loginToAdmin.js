@@ -1,6 +1,6 @@
 "use strict";
 const loginAdminPage_1 = require("../page-objects/adminLoginPage/loginAdminPage");
-const loginAdminPage_2 = require("../selectors/loginAdminPage");
+const loginAdminPage_2 = require("../selectors/adminLoginPage/loginAdminPage");
 const f = require("../service/exportFunction");
 const testName = "loginToAdmin";
 module.exports = {

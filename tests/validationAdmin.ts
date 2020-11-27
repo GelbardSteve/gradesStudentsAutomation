@@ -1,5 +1,5 @@
 import { ValidationAdminPage } from "../page-objects/adminLoginPage/validationAdminPage";
-import { loginAdminS } from "../selectors/loginAdminPage";
+import { loginAdminS } from "../selectors/adminLoginPage/loginAdminPage";
 import * as f from "../service/exportFunction";
 
 const testName: string = "validationAdmin";

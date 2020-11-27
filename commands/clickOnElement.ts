@@ -1,5 +1,5 @@
 import { Command } from "./commandInterfaces";
-//click on an element////////////////////////////////////////
+//click on an element////////////////////////////////////
 const clickOnElement = (c: Command) => {
   return new Promise<void>((done) => {
     c.browser

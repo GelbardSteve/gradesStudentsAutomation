@@ -1,5 +1,5 @@
 import { Command } from "./commandInterfaces";
-//
+//press tab function//////////////////////////
 const pressTab = (c: Command) => {
   return new Promise<void>((done) => {
     c.browser.keys(c.browser.Keys.TAB, (res) => {
@@ -16,5 +16,5 @@ const pressTab = (c: Command) => {
     });
   });
 };
-
+////////////////////////////////////////////////
 export { pressTab };

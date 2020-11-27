@@ -1,11 +1,10 @@
 import { Command } from "./commandInterfaces";
-// open browser and go to the site////////////
-const openBrowser = (c: Command) => {
+//waitForElement For element/////////////////////////////
+const waitForElement = (c: Command) => {
   return new Promise<void>((done) => {
-    c.browser.windowMaximize();
-    c.browser.url(c.data[1], (res) => {
+    c.browser.waitForElementVisible(c.data[1], 8000, false, (res) => {
       c.report({
-        command: "Open Browser",
+        command: "Wait For",
         cellData: c.data,
         statusData: res.status === 0,
         reportName: c.reportName,
@@ -17,5 +16,5 @@ const openBrowser = (c: Command) => {
     });
   });
 };
-////////////////////////////////////////////////
-export { openBrowser };
+//////////////////////////////////////////////////////////
+export { waitForElement };

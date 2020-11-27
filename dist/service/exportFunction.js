@@ -15,5 +15,6 @@ __exportStar(require("../commands/openBrowser"), exports);
 __exportStar(require("../commands/clickOnElement"), exports);
 __exportStar(require("../commands/pressTab"), exports);
 __exportStar(require("../commands/getText"), exports);
+__exportStar(require("../commands/clearField"), exports);
 __exportStar(require("../utils/reportsCreate"), exports);
 //# sourceMappingURL=exportFunction.js.map

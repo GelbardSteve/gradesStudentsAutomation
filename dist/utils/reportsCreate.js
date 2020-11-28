@@ -24,8 +24,9 @@ const createNewReport = (NameOfReport) => {
 exports.createNewReport = createNewReport;
 fs.readdir("../studentGradesAutomation/tests", (err, files) => {
     files.forEach((file) => {
-        if (!fs.existsSync(`../studentGradesAutomation/reports/${file.split(".")[0]}`)) {
-            fs.mkdirSync(`../studentGradesAutomation/reports/${file.split(".")[0]}`);
+        let folderToCreate = `../studentGradesAutomation/reports/${file.split(".")[0]}`;
+        if (!fs.existsSync(folderToCreate)) {
+            fs.mkdirSync(folderToCreate);
         }
     });
 });

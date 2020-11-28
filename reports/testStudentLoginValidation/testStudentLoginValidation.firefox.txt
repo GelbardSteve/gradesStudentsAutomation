@@ -1,7 +1,7 @@
-Time: 14:05, Date: 11-28-2020
+Time: 14:14, Date: 11-28-2020
 
 SUCCEED: Browser:firefox | Command: Open Browser URL | http://localhost:4200/
 SUCCEED: Browser:firefox | Command: Click On Login As Student Button | body > app-root > login-parent-dashboard > div > button
 SUCCEED: Browser:firefox | Command: Click On Student Number Field | #students_number | 10
-SUCCEED: Browser:firefox | Command: Get Text Of Student Number Field Validation | body > app-root > login-parent-dashboard > div > login-students-child > div > form > div > div > div:nth-child(3) > div | Students Number Is Required
 SUCCEED: Browser:firefox | Command: Click On Header Of Student | body > app-root > login-parent-dashboard > div > login-students-child > div > form > h2
+SUCCEED: Browser:firefox | Command: Get Text Of Student Number Field Validation | body > app-root > login-parent-dashboard > div > login-students-child > div > form > div > div > div:nth-child(3) > div | Students Number Is Required

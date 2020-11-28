@@ -6,6 +6,10 @@
   "page_objects_path": "",
   "globals_path": "",
 
+  "test_workers": {
+    "enabled": true,
+    "workers": 50
+  },
 
   "selenium": {
     "start_process": true,

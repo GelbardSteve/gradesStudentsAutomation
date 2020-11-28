@@ -1,0 +1,14 @@
+Time: 14:05, Date: 11-28-2020
+
+SUCCEED: Browser:chrome | Command: Open Browser URL | http://localhost:4200/
+SUCCEED: Browser:chrome | Command: Insert Text To User Name | #Name | admin
+SUCCEED: Browser:chrome | Command: Insert Text To Password | #Password | admin
+SUCCEED: Browser:chrome | Command: Click On Submit Button | body > app-root > login-parent-dashboard > div > login-admin-child > div > form > button
+SUCCEED: Browser:chrome | Command: Click On Insert Student Btn | body > app-root > app-admin-dashboard > div > div > div:nth-child(1) > button
+SUCCEED: Browser:chrome | Command: Click On Student Name Field | #students_name | students99
+SUCCEED: Browser:chrome | Command: Click On Student Number Field | #students_number | 99
+SUCCEED: Browser:chrome | Command: Get Text Of Student Name Field Validation | body > app-root > app-admin-dashboard > div > div > div:nth-child(1) > post-students-form > form > div > div:nth-child(1) > div:nth-child(1) > div | Name Is Required
+SUCCEED: Browser:chrome | Command: Click On Student Grades Field | #studentsGrades | History: 100
+SUCCEED: Browser:chrome | Command: Get Text Of Student Number Field Validation | body > app-root > app-admin-dashboard > div > div > div:nth-child(1) > post-students-form > form > div > div:nth-child(1) > div:nth-child(2) > div > div | Student Number Required
+SUCCEED: Browser:chrome | Command: Click On Student Name Field | #students_name | students99
+SUCCEED: Browser:chrome | Command: Get Text Of Student Grades Field Validation | body > app-root > app-admin-dashboard > div > div > div:nth-child(1) > post-students-form > form > div > div.ml-1.ng-pristine.ng-invalid.ng-touched > div:nth-child(1) > div | studentsGrades Grades Required

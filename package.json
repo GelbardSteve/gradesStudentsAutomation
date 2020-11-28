@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "build": "rm -rf dist/ & tsc",
-    "start": "npm run build && npm run test:main && npm run test:entity && npm run cleanup",
-    "test:main": "node nightwatch -e firefox,chrome,edge",
+    "start": "npm run build && npm run test:c && npm run test:f && npm run test:e && npm run test:entity && npm run cleanup",
+    "test:c": "node nightwatch -e chrome",
+    "test:f": "node nightwatch -e firefox",
+    "test:e": "node nightwatch -e edge",
     "test:entity": "mocha -r ./node_modules/ts-node/register ./test/**/*.spec.ts",
     "cleanup": "taskkill /f /im chromedriver.exe & taskkill /f /im msedge.exe & taskkill /f /im geckodriver.exe"
   },
@@ -20,6 +22,7 @@
     "jasmine": "^3.6.3",
     "mocha": "^8.2.1",
     "nightwatch": "^1.5.1",
+    "path": "^0.12.7",
     "ts-loader": "^8.0.11",
     "ts-node": "^9.0.0",
     "typescript": "^4.1.2"

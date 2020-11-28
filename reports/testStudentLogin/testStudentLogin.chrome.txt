@@ -1,0 +1,7 @@
+Time: 14:05, Date: 11-28-2020
+
+SUCCEED: Browser:chrome | Command: Open Browser URL | http://localhost:4200/
+SUCCEED: Browser:chrome | Command: Click On Login As Student Button | body > app-root > login-parent-dashboard > div > button
+SUCCEED: Browser:chrome | Command: Insert Text To Student Number Field | #students_number | 10
+SUCCEED: Browser:chrome | Command: Click On Submit Button | body > app-root > login-parent-dashboard > div > login-students-child > div > form > button
+SUCCEED: Browser:chrome | Command: Wait For Student Table Grades | body > app-root > login-parent-dashboard > div > login-students-child > table

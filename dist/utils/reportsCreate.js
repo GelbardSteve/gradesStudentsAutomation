@@ -24,7 +24,9 @@ const createNewReport = (NameOfReport) => {
 exports.createNewReport = createNewReport;
 fs.readdir("../studentGradesAutomation/tests", (err, files) => {
     files.forEach((file) => {
-        return createNewReport(file.split(".")[0]);
+        if (!fs.existsSync(`../studentGradesAutomation/reports/${file.split(".")[0]}`)) {
+            fs.mkdirSync(`../studentGradesAutomation/reports/${file.split(".")[0]}`);
+        }
     });
 });
 const insertDataToReport = (r) => {

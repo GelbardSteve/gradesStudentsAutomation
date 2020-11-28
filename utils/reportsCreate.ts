@@ -34,7 +34,11 @@ const createNewReport = (NameOfReport) => {
 
 fs.readdir("../studentGradesAutomation/tests", (err, files) => {
   files.forEach((file) => {
-    return createNewReport(file.split(".")[0]);
+    if (
+      !fs.existsSync(`../studentGradesAutomation/reports/${file.split(".")[0]}`)
+    ) {
+      fs.mkdirSync(`../studentGradesAutomation/reports/${file.split(".")[0]}`);
+    }
   });
 });
 
@@ -43,7 +47,9 @@ const insertDataToReport = (r: Report) => {
     `../studentGradesAutomation/reports/${r.reportName}.txt`,
     `${r.statusData ? "SUCCEED" : "FAILED"}: Browser:${
       r.browserName
-    } | Command: ${r.command} ${r.cellData ? r.cellData.join(" | ") : null}\r\n`,
+    } | Command: ${r.command} ${
+      r.cellData ? r.cellData.join(" | ") : null
+    }\r\n`,
     (err) => {
       if (err) throw err;
     }

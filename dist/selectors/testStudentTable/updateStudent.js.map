@@ -1,0 +1,1 @@
+{"version":3,"file":"updateStudent.js","sourceRoot":"","sources":["../../../selectors/testStudentTable/updateStudent.ts"],"names":[],"mappings":";;;AAAA,MAAM,cAAc,GAAG;IAEnB,YAAY,EAAE;QACV,eAAe;QACf,6IAA6I;KAChJ;IACD,WAAW,EAAE;QACT,cAAc;QACd,iBAAiB;QACjB,cAAc;KACjB;IACD,UAAU,EAAE;QACR,aAAa;QACb,mFAAmF;KACtF;CACJ,CAAA;AAEQ,wCAAc"}

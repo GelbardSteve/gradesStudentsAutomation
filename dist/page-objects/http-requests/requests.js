@@ -9,7 +9,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.sendRequest = exports.SendRequest = void 0;
+exports.sendRequest = void 0;
 const axios_1 = require("axios");
 class SendRequest {
     constructor() { }
@@ -38,6 +38,5 @@ class SendRequest {
         });
     }
 }
-exports.SendRequest = SendRequest;
 exports.sendRequest = new SendRequest();
 //# sourceMappingURL=requests.js.map

@@ -1,4 +1,4 @@
-Time: 15:52, Date: 11-28-2020
+Time: 16:15, Date: 11-28-2020
 
 SUCCEED: Browser:MicrosoftEdge | Command: Open Browser URL | http://localhost:4200/
 SUCCEED: Browser:MicrosoftEdge | Command: Click On Login As Student Button | body > app-root > login-parent-dashboard > div > button

@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export class SendRequest {
+class SendRequest {
   constructor() {}
 
   async postRequest(url: string, data: {}) {

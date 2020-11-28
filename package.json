@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "rm -rf dist/ & tsc",
-    "start": "npm run build && npm run test:c && npm run test:f && npm run test:e && npm run test:entity && npm run cleanup",
+    "start": "npm run build && npm run test:c && npm run test:f && npm run test:e && npm run test:entity",
     "test:c": "node nightwatch -e chrome",
     "test:f": "node nightwatch -e firefox",
     "test:e": "node nightwatch -e edge",

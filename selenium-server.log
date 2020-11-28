@@ -1,9 +1,9 @@
-14:29:39.011 INFO [GridLauncherV3.parse] - Selenium server version: 3.141.59, revision: e82be7d358
-14:29:39.146 INFO [GridLauncherV3.lambda$buildLaunchers$3] - Launching a standalone Selenium Server on port 4444
-2020-11-28 14:29:39.245:INFO::main: Logging initialized @673ms to org.seleniumhq.jetty9.util.log.StdErrLog
-14:29:39.644 INFO [WebDriverServlet.<init>] - Initialising WebDriverServlet
-14:29:40.345 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 4444
-14:29:42.944 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+15:51:59.180 INFO [GridLauncherV3.parse] - Selenium server version: 3.141.59, revision: e82be7d358
+15:51:59.317 INFO [GridLauncherV3.lambda$buildLaunchers$3] - Launching a standalone Selenium Server on port 4444
+2020-11-28 15:51:59.409:INFO::main: Logging initialized @666ms to org.seleniumhq.jetty9.util.log.StdErrLog
+15:51:59.794 INFO [WebDriverServlet.<init>] - Initialising WebDriverServlet
+15:52:00.516 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 4444
+15:52:04.439 INFO [ActiveSessionFactory.apply] - Capabilities are: {
   "acceptSslCerts": true,
   "browserName": "MicrosoftEdge",
   "edgeOptions": {
@@ -17,49 +17,7 @@
   "marionette": true,
   "name": "Login To Admin"
 }
-14:29:42.944 INFO [ActiveSessionFactory.apply] - Capabilities are: {
-  "acceptSslCerts": true,
-  "browserName": "MicrosoftEdge",
-  "edgeOptions": {
-    "w3c": false,
-    "args": [
-      "--no-sandbox",
-      "--headless"
-    ]
-  },
-  "javascriptEnabled": true,
-  "marionette": true,
-  "name": "Create New Student"
-}
-14:29:42.944 INFO [ActiveSessionFactory.apply] - Capabilities are: {
-  "acceptSslCerts": true,
-  "browserName": "MicrosoftEdge",
-  "edgeOptions": {
-    "w3c": false,
-    "args": [
-      "--no-sandbox",
-      "--headless"
-    ]
-  },
-  "javascriptEnabled": true,
-  "marionette": true,
-  "name": "Test Student Login"
-}
-14:29:42.944 INFO [ActiveSessionFactory.apply] - Capabilities are: {
-  "acceptSslCerts": true,
-  "browserName": "MicrosoftEdge",
-  "edgeOptions": {
-    "w3c": false,
-    "args": [
-      "--no-sandbox",
-      "--headless"
-    ]
-  },
-  "javascriptEnabled": true,
-  "marionette": true,
-  "name": "Update Student"
-}
-14:29:42.945 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+15:52:04.439 INFO [ActiveSessionFactory.apply] - Capabilities are: {
   "acceptSslCerts": true,
   "browserName": "MicrosoftEdge",
   "edgeOptions": {
@@ -73,12 +31,7 @@
   "marionette": true,
   "name": "Test Student Login Validation"
 }
-14:29:42.946 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.edge.EdgeDriverService)
-14:29:42.946 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.edge.EdgeDriverService)
-14:29:42.946 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.edge.EdgeDriverService)
-14:29:42.946 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.edge.EdgeDriverService)
-14:29:42.947 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.edge.EdgeDriverService)
-14:29:42.947 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+15:52:04.439 INFO [ActiveSessionFactory.apply] - Capabilities are: {
   "acceptSslCerts": true,
   "browserName": "MicrosoftEdge",
   "edgeOptions": {
@@ -90,34 +43,42 @@
   },
   "javascriptEnabled": true,
   "marionette": true,
-  "name": "Validation Admin"
+  "name": "Test Student Login"
 }
-14:29:42.949 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.edge.EdgeDriverService)
-Starting MSEdgeDriver 86.0.622.69 (19046d7b09a04b7b7bbc327482322bc48fbfffc9) on port 3079
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping MSEdgeDriver safe.
-Starting MSEdgeDriver 86.0.622.69 (19046d7b09a04b7b7bbc327482322bc48fbfffc9) on port 6903
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping MSEdgeDriver safe.
-Starting MSEdgeDriver 86.0.622.69 (19046d7b09a04b7b7bbc327482322bc48fbfffc9) on port 17048
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping MSEdgeDriver safe.
-Starting MSEdgeDriver 86.0.622.69 (19046d7b09a04b7b7bbc327482322bc48fbfffc9) on port 25757
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping MSEdgeDriver safe.
-Starting MSEdgeDriver 86.0.622.69 (19046d7b09a04b7b7bbc327482322bc48fbfffc9) on port 34662
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping MSEdgeDriver safe.
-Starting MSEdgeDriver 86.0.622.69 (19046d7b09a04b7b7bbc327482322bc48fbfffc9) on port 10402
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping MSEdgeDriver safe.
-MSEdgeDriver was started successfully.
-MSEdgeDriver was started successfully.
-MSEdgeDriver was started successfully.
-MSEdgeDriver was started successfully.
-MSEdgeDriver was started successfully.
-MSEdgeDriver was started successfully.
-14:29:43.288 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+15:52:04.439 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "acceptSslCerts": true,
+  "browserName": "MicrosoftEdge",
+  "edgeOptions": {
+    "w3c": false,
+    "args": [
+      "--no-sandbox",
+      "--headless"
+    ]
+  },
+  "javascriptEnabled": true,
+  "marionette": true,
+  "name": "Create New Student"
+}
+15:52:04.442 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.edge.EdgeDriverService)
+15:52:04.442 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.edge.EdgeDriverService)
+15:52:04.442 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.edge.EdgeDriverService)
+15:52:04.443 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.edge.EdgeDriverService)
+15:52:04.719 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "acceptSslCerts": true,
+  "browserName": "MicrosoftEdge",
+  "edgeOptions": {
+    "w3c": false,
+    "args": [
+      "--no-sandbox",
+      "--headless"
+    ]
+  },
+  "javascriptEnabled": true,
+  "marionette": true,
+  "name": "Update Student"
+}
+15:52:04.720 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.edge.EdgeDriverService)
+15:52:04.750 INFO [ActiveSessionFactory.apply] - Capabilities are: {
   "acceptSslCerts": true,
   "browserName": "MicrosoftEdge",
   "edgeOptions": {
@@ -131,36 +92,79 @@ MSEdgeDriver was started successfully.
   "marionette": true,
   "name": "Validation Create New S"
 }
-14:29:43.288 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.edge.EdgeDriverService)
-Starting MSEdgeDriver 86.0.622.69 (19046d7b09a04b7b7bbc327482322bc48fbfffc9) on port 44951
+15:52:04.750 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.edge.EdgeDriverService)
+15:52:04.811 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "acceptSslCerts": true,
+  "browserName": "MicrosoftEdge",
+  "edgeOptions": {
+    "w3c": false,
+    "args": [
+      "--no-sandbox",
+      "--headless"
+    ]
+  },
+  "javascriptEnabled": true,
+  "marionette": true,
+  "name": "Validation Admin"
+}
+15:52:04.812 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.edge.EdgeDriverService)
+Starting MSEdgeDriver 86.0.622.69 (19046d7b09a04b7b7bbc327482322bc48fbfffc9) on port 14553
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping MSEdgeDriver safe.
+Starting MSEdgeDriver 86.0.622.69 (19046d7b09a04b7b7bbc327482322bc48fbfffc9) on port 5830
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping MSEdgeDriver safe.
+Starting MSEdgeDriver 86.0.622.69 (19046d7b09a04b7b7bbc327482322bc48fbfffc9) on port 24352
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping MSEdgeDriver safe.
+Starting MSEdgeDriver 86.0.622.69 (19046d7b09a04b7b7bbc327482322bc48fbfffc9) on port 17530
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping MSEdgeDriver safe.
 MSEdgeDriver was started successfully.
-[1606566586.073][WARNING]: This version of MSEdgeDriver has not been tested with MSEdge version 87.
-[1606566586.126][WARNING]: This version of MSEdgeDriver has not been tested with MSEdge version 87.
-[1606566586.149][WARNING]: This version of MSEdgeDriver has not been tested with MSEdge version 87.
-[1606566586.183][WARNING]: This version of MSEdgeDriver has not been tested with MSEdge version 87.
-[1606566586.215][WARNING]: This version of MSEdgeDriver has not been tested with MSEdge version 87.
-[1606566586.227][WARNING]: This version of MSEdgeDriver has not been tested with MSEdge version 87.
-[1606566586.283][WARNING]: This version of MSEdgeDriver has not been tested with MSEdge version 87.
-14:29:47.465 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
-14:29:47.517 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
-14:29:47.536 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
-14:29:47.695 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
-14:29:47.853 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
-14:29:47.880 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
-14:29:47.944 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
-14:29:48.155 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 5944af1cb73a1a16c3a4526b446f11a3 (org.openqa.selenium.edge.EdgeDriverService)
-14:29:48.156 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 2873fa07f20aeb8ca4740f587b71f417 (org.openqa.selenium.edge.EdgeDriverService)
-14:29:48.157 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 8114730f1715709babe78b12902b5c81 (org.openqa.selenium.edge.EdgeDriverService)
-14:29:48.155 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session f2d99a5ccdbf1ed3829517067af58e08 (org.openqa.selenium.edge.EdgeDriverService)
-14:29:48.157 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 585577841ce0cd785d97896692ae3378 (org.openqa.selenium.edge.EdgeDriverService)
-14:29:48.162 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 07133fe67d87287a2a388fb09b59875f (org.openqa.selenium.edge.EdgeDriverService)
-14:29:48.155 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 2598de0f9054f9fe99b89c357003a8c1 (org.openqa.selenium.edge.EdgeDriverService)
-14:29:57.836 INFO [ActiveSessions$1.onStop] - Removing session 5944af1cb73a1a16c3a4526b446f11a3 (org.openqa.selenium.edge.EdgeDriverService)
-14:29:58.479 INFO [ActiveSessions$1.onStop] - Removing session 07133fe67d87287a2a388fb09b59875f (org.openqa.selenium.edge.EdgeDriverService)
-14:29:58.537 INFO [ActiveSessions$1.onStop] - Removing session 585577841ce0cd785d97896692ae3378 (org.openqa.selenium.edge.EdgeDriverService)
-14:29:58.642 INFO [ActiveSessions$1.onStop] - Removing session 2873fa07f20aeb8ca4740f587b71f417 (org.openqa.selenium.edge.EdgeDriverService)
-14:30:00.507 INFO [ActiveSessions$1.onStop] - Removing session 2598de0f9054f9fe99b89c357003a8c1 (org.openqa.selenium.edge.EdgeDriverService)
-14:30:01.835 INFO [ActiveSessions$1.onStop] - Removing session 8114730f1715709babe78b12902b5c81 (org.openqa.selenium.edge.EdgeDriverService)
-14:30:02.090 INFO [ActiveSessions$1.onStop] - Removing session f2d99a5ccdbf1ed3829517067af58e08 (org.openqa.selenium.edge.EdgeDriverService)
+MSEdgeDriver was started successfully.
+MSEdgeDriver was started successfully.
+MSEdgeDriver was started successfully.
+Starting MSEdgeDriver 86.0.622.69 (19046d7b09a04b7b7bbc327482322bc48fbfffc9) on port 22572
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping MSEdgeDriver safe.
+Starting MSEdgeDriver 86.0.622.69 (19046d7b09a04b7b7bbc327482322bc48fbfffc9) on port 5955
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping MSEdgeDriver safe.
+Starting MSEdgeDriver 86.0.622.69 (19046d7b09a04b7b7bbc327482322bc48fbfffc9) on port 5504
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping MSEdgeDriver safe.
+MSEdgeDriver was started successfully.
+MSEdgeDriver was started successfully.
+MSEdgeDriver was started successfully.
+[1606571528.318][WARNING]: This version of MSEdgeDriver has not been tested with MSEdge version 87.
+[1606571528.343][WARNING]: This version of MSEdgeDriver has not been tested with MSEdge version 87.
+[1606571528.399][WARNING]: This version of MSEdgeDriver has not been tested with MSEdge version 87.
+[1606571528.406][WARNING]: This version of MSEdgeDriver has not been tested with MSEdge version 87.
+[1606571528.409][WARNING]: This version of MSEdgeDriver has not been tested with MSEdge version 87.
+[1606571528.412][WARNING]: This version of MSEdgeDriver has not been tested with MSEdge version 87.
+[1606571528.425][WARNING]: This version of MSEdgeDriver has not been tested with MSEdge version 87.
+[1606571528.981][WARNING]: This version of MSEdgeDriver has not been tested with MSEdge version 87.
+[1606571529.048][WARNING]: This version of MSEdgeDriver has not been tested with MSEdge version 87.
+[1606571529.061][WARNING]: This version of MSEdgeDriver has not been tested with MSEdge version 87.
+[1606571529.070][WARNING]: This version of MSEdgeDriver has not been tested with MSEdge version 87.
+15:52:09.819 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
+15:52:09.819 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
+15:52:10.121 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
+15:52:10.129 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
+15:52:10.229 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
+15:52:10.445 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
+15:52:10.490 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 6930d5976fe4d4cd144b413499a6cc17 (org.openqa.selenium.edge.EdgeDriverService)
+15:52:10.491 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 1ecefe2224384144c81a484e52bde49a (org.openqa.selenium.edge.EdgeDriverService)
+15:52:10.491 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 5133bc0c823982fc92a619680f3b51fb (org.openqa.selenium.edge.EdgeDriverService)
+15:52:10.493 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 48a1b48c5d387ff36f3075fc7bd73fa2 (org.openqa.selenium.edge.EdgeDriverService)
+15:52:10.493 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 30101bb881ac6883f5000e9228354b69 (org.openqa.selenium.edge.EdgeDriverService)
+15:52:10.495 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 907ef2711ccb3540a0d8ed583e05b729 (org.openqa.selenium.edge.EdgeDriverService)
+15:52:10.723 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
+15:52:10.765 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 5a361d5443bcd9b3cc01fe5d0d994456 (org.openqa.selenium.edge.EdgeDriverService)
+15:52:19.368 INFO [ActiveSessions$1.onStop] - Removing session 907ef2711ccb3540a0d8ed583e05b729 (org.openqa.selenium.edge.EdgeDriverService)
+15:52:19.570 INFO [ActiveSessions$1.onStop] - Removing session 30101bb881ac6883f5000e9228354b69 (org.openqa.selenium.edge.EdgeDriverService)
+15:52:19.928 INFO [ActiveSessions$1.onStop] - Removing session 1ecefe2224384144c81a484e52bde49a (org.openqa.selenium.edge.EdgeDriverService)
+15:52:19.999 INFO [ActiveSessions$1.onStop] - Removing session 5a361d5443bcd9b3cc01fe5d0d994456 (org.openqa.selenium.edge.EdgeDriverService)
+15:52:21.532 INFO [ActiveSessions$1.onStop] - Removing session 48a1b48c5d387ff36f3075fc7bd73fa2 (org.openqa.selenium.edge.EdgeDriverService)
+15:52:22.882 INFO [ActiveSessions$1.onStop] - Removing session 6930d5976fe4d4cd144b413499a6cc17 (org.openqa.selenium.edge.EdgeDriverService)
+15:52:22.969 INFO [ActiveSessions$1.onStop] - Removing session 5133bc0c823982fc92a619680f3b51fb (org.openqa.selenium.edge.EdgeDriverService)

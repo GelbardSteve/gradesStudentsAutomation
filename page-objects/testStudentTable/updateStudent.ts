@@ -3,8 +3,8 @@ export class UpdateStudent {
     private browser: any,
     private f: typeof import("../../service/exportFunction"),
     private data: {
-      UpdateButton: any;
-      UpdateField: any;
+      UpdateButton: string[];
+      UpdateField: string[];
       SaveButton: string[];
     },
     private testName: string,

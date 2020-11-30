@@ -3,8 +3,8 @@ export class CreateNewStudent {
     private browser: any,
     private f: typeof import("../../service/exportFunction"),
     private data: {
-      InserStudentBtn: any[];
-      StudentNameField: any[];
+      InserStudentBtn: string[];
+      StudentNameField: string[];
       StudentNumberField: string[];
       StudentGradesField: string[];
       GoToNextPage: string[];

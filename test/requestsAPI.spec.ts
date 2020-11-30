@@ -22,6 +22,7 @@ describe("run API requests", () => {
     await sendRequest
       .postRequest("http://localhost:3000/students2", postStudent)
       .then((res) => {
+        expect(res.status).to.equal(200);
         expect(res.data).to.equal("successful");
       });
   });
@@ -30,6 +31,7 @@ describe("run API requests", () => {
     await sendRequest
       .postRequest("http://localhost:3000/grades", postStudentGrades)
       .then((res) => {
+        expect(res.status).to.equal(200);
         expect(res.data).to.equal("successful");
       });
   });
@@ -48,14 +50,20 @@ describe("run API requests", () => {
     await sendRequest
       .updateRequest("http://localhost:3000/grades", updateStudentGrades)
       .then((res) => {
+        expect(res.status).to.equal(200);
         expect(res.data).to.equal("Update succeed");
       });
   });
 
   it("should delete student", async () => {
     await sendRequest
-      .deleteRequest("http://localhost:3000/students2", deleteStudentGrades, "students_id")
+      .deleteRequest(
+        "http://localhost:3000/students2",
+        deleteStudentGrades,
+        "students_id"
+      )
       .then((res) => {
+        expect(res.status).to.equal(200);
         expect(res.data).to.include({ succeed: true });
       });
   });

@@ -2,7 +2,15 @@ export class StudentLoginValidation {
   constructor(
     private browser: any,
     private f: typeof import("../../service/exportFunction"),
-    private data,
+    private data: {
+      URL: string[];
+      LoginAsStudentButton: string[];
+      HeaderOfStudent: string[];
+      StudentNumberField: string[];
+      StudentNumberFieldValidation: string[];
+      SubmitButton?: string[];
+      StudentTableGrades?: string[];
+    },
     private testName: string,
     private browserN: string
   ) {}

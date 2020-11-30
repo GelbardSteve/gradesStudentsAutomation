@@ -28,6 +28,7 @@ describe("run API requests", () => {
         yield requests_1.sendRequest
             .postRequest("http://localhost:3000/students2", postStudent)
             .then((res) => {
+            chai_1.expect(res.status).to.equal(200);
             chai_1.expect(res.data).to.equal("successful");
         });
     }));
@@ -35,6 +36,7 @@ describe("run API requests", () => {
         yield requests_1.sendRequest
             .postRequest("http://localhost:3000/grades", postStudentGrades)
             .then((res) => {
+            chai_1.expect(res.status).to.equal(200);
             chai_1.expect(res.data).to.equal("successful");
         });
     }));
@@ -51,6 +53,7 @@ describe("run API requests", () => {
         yield requests_1.sendRequest
             .updateRequest("http://localhost:3000/grades", updateStudentGrades)
             .then((res) => {
+            chai_1.expect(res.status).to.equal(200);
             chai_1.expect(res.data).to.equal("Update succeed");
         });
     }));
@@ -58,6 +61,7 @@ describe("run API requests", () => {
         yield requests_1.sendRequest
             .deleteRequest("http://localhost:3000/students2", deleteStudentGrades, "students_id")
             .then((res) => {
+            chai_1.expect(res.status).to.equal(200);
             chai_1.expect(res.data).to.include({ succeed: true });
         });
     }));

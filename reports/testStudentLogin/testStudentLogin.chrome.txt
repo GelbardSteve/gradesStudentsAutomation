@@ -1,4 +1,4 @@
-Time: 16:13, Date: 11-28-2020
+Time: 9:41, Date: 11-30-2020
 
 SUCCEED: Browser:chrome | Command: Open Browser URL | http://localhost:4200/
 SUCCEED: Browser:chrome | Command: Click On Login As Student Button | body > app-root > login-parent-dashboard > div > button

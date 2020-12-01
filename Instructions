@@ -1,3 +1,6 @@
 In order to run this project:
-1. Open & Install "studentsGradesTable" angular project with npm start
-2. Open & Install "studentGradesAutomation" automation project with npm i then npm start
+1. Make sure that webdrivers in lib folder are in the correct version as your browser (chrome, firefox, edge)
+2. The automation will not open the browser, if you wish to see the running go to nightwatch.json -> remove all the headless from the browser's json
+3. Reports of the automation can be found in "reports" folder (report of the API request will be in the terminal)
+4. Open & Install "studentsGradesTable" angular project with npm start
+5. Open & Install "studentGradesAutomation" automation project with npm i then npm start
